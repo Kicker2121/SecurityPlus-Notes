@@ -1,0 +1,42 @@
+OSI Model
+----------------------
+Memory Tools: All People Seem To Need Data Protection
+______________________________________________________________________________________
+*** 7 Layers of OSI Model ***
+
+ 7. Application: Integrates network functionality into host operating system and 
+                 enables network services. Supports application and end-user processes, 
+                 communication partners are identified, quality of service is 
+                 identified, user authentication and privacy are considered, and any 
+                 constraints on data syntax are identified. Provides application 
+                 services for: file-transfers, email, network software, telnet, and 
+                 FTP. 
+        > Application Proxy Firewall
+        > End User
+ 6. Presentation: Presents Data. Providing independence from differences in data 
+                  representation (encryption) by translating from application to 
+                  network format.
+        > Restoration of data
+ 5. Session: Managing the sessions in which data is transferred. Establishes, manages 
+             and terminates connections between applications.
+        > SSL up to layer 7
+ 4. Transport: Providing transparent transfer of data between end systems, or hosts, 
+               and is responsible for end-to-end error recovery and flow control.
+        > TCP or UDP
+ 3. Network: How data is routed across networks and on to the destination. Providing  
+             switching and routing techniques, creating logical paths, known as virtual 
+             circuitsm, for transmitting data from node to node. Routing and forwarding 
+             are functions of this layer, as well as addressing, internetworking, error 
+             handling, congestion control, and packet sequencing.
+        > Logical Addressing (IP or IPx) - decided what addresses to be sent
+        > ICMP, Routers
+        > Internet Protocol (IP)
+ 2. Data Link: Defines rules and procedures for hosts as they access the physical 
+                 layer. Data packets are encoded and decoded into bits. It furnishes 
+                 transmission protocol knowledge and management and handles errors in 
+                 the physical layer, flow control and frame synchronization.
+        > MAC / Physical, NIC, Switches
+ 1. Physical: Sets standards for sending and recieving electrical signals between  
+              devices. Conveys the bit stream - electrical impulse, light or radio  
+              signal through the network at the electrical and mechanical level.
+        > Cables, Hubs, Switches

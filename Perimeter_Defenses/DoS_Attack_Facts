@@ -1,0 +1,93 @@
+DoS Attack Facts
+===================================
+
+- DoS Attack
+  * A single attacker directs an attack against a single target, sending packets
+    directly to the target. 
+  * DDOS attack: Multiple PC's attack a victim simultaneously. A series of 
+    computers scan target computers to find weaknesses and then compromise the
+    most vulnerable systems.
+  * Steps for process:
+     1. Attacker identifies one of the computers as the master(also known as
+        zombie master or bot herder)
+     2. Master uses zombies/bots (compromised machines to attack)
+     3. Master directs the zombies to attack the same target
+     4. Attacker is able to effectively hide his identity by being two hops away
+        from the victim.
+        
+- DoS attack that use the ICMP protocol
+  > Ping Flood
+    - Attacker overwhelms the victim with ICMP Echo requests (ping) packets
+      Steps:
+        1. Attack succeeds only if attacker has more bandwidth than the victim.
+        2. Attacker hopes that the victim wil respond with ICMP echo reply packets
+  > Ping of Death
+    - Also called a long ICMP attack
+    - Uses the ping program to send oversized ICMP packets
+      Steps:
+        1. Attacker sends one very large ICMP packet (larger than 65,536 bytes)
+           directly to the victim
+        2. Size of packet causes the system to freeze, crash, or reboot.
+  > Smurf
+    - Attack is a form of DRDos that spoofs the source address in ICMP packets.
+    - Requires attacker system, an amplification network, and a victim computer
+      or network.
+      Steps:
+        1. Attacker sends ICMP packets to an amplification network or broadcast
+           address. The packets spoof the source address to be of the target.
+        2. Amplification network responds by sending packets to the target 
+           (victim) site.
+        3. Victim has thousands of replies to packets send by the attacker.
+  
+- Dos attack that use the TCP protocol
+  > SYN Flood
+    - Exploits the TCP three-way handshake
+      Steps:
+        1. Attacker floods a victim site with SYN packets
+        2. Victim responds to each SYN packet with a SYN ACK packet
+        3. Attacker does not respond with the last portion of the handshake
+           an (ACK packet), leaving the vitim waiting for a response.
+        4. Attacker continues to send the victim SYN frames with a spoofed address
+        5. Victim continues to attempt sessions with the attacker, allocating
+           resources to accommodate each of these inbout session requests.
+    - Also known as a half-open scan attack
+    
+   > LAND
+     - Attacker floods victims system with packets that have forged headers.
+     
+   > Christmas (Xmas) Tree
+     - Also known as Christmas Tree Scan, Nastygram, Kamikaze, or lamp test segm
+     - Uses IP packet with every option turned on for the protocol being used.
+     - Christmas tree packets can be used to conduct reconnaissance by scanning
+       for open ports, and also a DoS attack if sent in large numbers.
+       
+- DoS attack that use the UDP protocol
+  > Fraggle
+    - Sends a large amount of UDP packets directed to broadcast adresses aimed at
+      port 7 (echo) and port 19 (chargen-character generation) with spoofed 
+      source addresses.
+    - Variation smurf attack, using UDP instead of ICMP 
+  > Teardrop 
+    - Attack manipulates the UDP fragment number and location.
+      Steps:
+        1. Fragmented UDP packets with overlapping offsets are sent
+        2. Victim system rebuilds the packets, an invalid UDP packet is created
+           causing the system to crash or reboot 
+           
+- Spamming
+  * Is another form of DoS attack
+  * Is sending unwanted e-mail messages
+    Steps:
+      1. Consumes bandwidth that is used by legitimate traffic
+      2. Can fill a mailbox or hard disk and result in legitimate e-mail being 
+         rejected
+      3. Spam is often distributed by hujacking misconfigured SMTP servers.
+      
+    Countermeasures:
+      1. Intrusion Detection Systems (IDS) or Intrusion Protection Systems (IPS)
+      2. Srong anti-virus
+      3. File and folder hashes
+      4. reverse DNS lookup
+      5. External firewalls
+      6. Filters to block unwanted traffic
+      7. System patches and updates 

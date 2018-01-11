@@ -1,0 +1,43 @@
+Email Security
+--------------------------------
+THere are three main e-mail problems: viruses, spam, and phishing
+
+Virus - Attach to files so e-mail file attachments are a very easy way to spread
+   viruses. 
+
+Spam - Unwanted and unsolicited email sent to many recipients.
+   * Can contain malware as attachments.
+   [-] Prevention on a Client System: 
+      - Anti-Virus Software
+      - Anti-Spam Software
+      - Junk mail filtering
+         * Setting up a whitelist and black lists.
+         
+Preventing Spam on an E-mail Server:
+   * Install anti-virus and Install Server level anti-spam software
+   * Server Level Anti-Spam Software:
+      - Pre-defined levels of security, use white and black lists.
+
+Closing Open SMTP Relays - designed into email servers, and allows them to
+   forward email from one server to another. Open relays are most common
+   method for attackers to send spam to emails and spoofed emails
+   
+Preventing Open Relays - Use strong athentication for your SMTP servers.
+   * Disable anonymous relays.
+
+Repudiation Attack (SPAM attack):
+   Ex: Where someone accesses your e-mail server and send inflammatory e-mails
+      to other people. They are spoofing the e-mails so it appears that they 
+      come from you.
+
+Using S/MIME to Secure E-mail - A protocol that allows users to send both 
+   encrypted and digitally signed e-mail messages.
+
+Using Pretty Good Privacy (PGP) to Secure E-mail - Uses asymmetric encryption 
+   scheme for security. 
+   * Is Peer-to-Peer System
+   * There is no root CA or trusted CA hierarchy, must trust other users using
+      the system. Uses something called a WEB OF TRUST to establish authenticiy
+      in this decentralized system.
+      
+      

@@ -1,0 +1,46 @@
+Switch Security 
+------------------------------------
+
+VLANs - Identify logical groupings of computers based on switch port. 
+   Ex: Using a switch with multiple ports, you assign each port to a specific 
+      virtual LAN. Identify the port with a VLAN ID, or name. 
+   * Used to isolate traffic from one group of computers to another group.
+   * Devices and computers outside cannot access.
+
+Trunking - Several switches on the same network.
+   * VLAN - Only traffic within the same VLAN and can only be sent out ports that
+      are associated with that same VLAN.
+   * Trunk Port (Special Port Protocol): Is a member of both of the VLANs 
+      that have be defined on each switch. 
+   * By Default: a trunk port is a member of all VLANs defined on the switch.
+
+Destination Broadcast - In a switch network its sending it to everyone and its brother
+
+Frame Tagging - When moving from switch to switch that frame needs to be modified
+   so that the recieving switch knows the VLAN ID associated with that frame. 
+   Ex: Switch cannot simply assume that incomeing frames are, from the red VLAN
+   because it could also be from purple VLAN. 
+   
+Inter-VLAN Routing - Devices can only communicate with other devices that are 
+   members of the same VLAN.
+   * Connect router through 1 interface making the router a member of 1st VLAN
+   * Use a second connection to connect the router to the switch, and making this
+      port a member of the other VLAN. 
+   * Information sent from the first device goes through the router and then is
+      forwarded to the recieving device.
+      
+Port Security (MAC Address Filtering) - Switch drops frames that are not 
+   associated with allowed MAC addresses. Uses the MAC address to make decisions 
+   about whether a frame should be forwarded through the switch. Switch keeps 
+   track of a list of MAC addresses and ports. 
+
+Port Violation - Unathorized device detected on the switch.
+   * Switch could disable port
+   * Learning Function: when you connect a device to a port the switch will 
+      identify the MAC address and make an entry in its table.
+      
+Port Authentication - Enable / disables communication through a specific port
+   based on the authentication status of a device. 
+   
+RADIUS server - recieves authentication information and identifies whether the
+   device or that user is allowed to connect to the network. 

@@ -1,0 +1,53 @@
+SAN Security Issues
+------------------------------------------
+"""""""NEEEEEDDDSS WOORRRRKK"""""""""""" on notes.
+
+
+Storage Area Network
+   * Multiple servers that all share a same shared storage area. Share a common
+      storage device.
+
+SAN Technologies - 
+   1. Fibre Channel(FC) - Most expensive
+   2. ISCSI 
+   
+Target and Initiators
+   1. Target: SAN storage devices
+   2. Initiators: Shared servers that connect to the shared storage device.
+       - Connects to and communicates with the SAN target.
+
+Implementing SAN Security Controls - 
+
+Logical Unit Number (LUN) Masking - Implements security through obscurity.
+   * SCSI, SCSI Protocol for communications between server and the shared hard
+      disks. Server thinks its talking to a locally attached SCSI hard disk 
+      drive. 
+   * Effectively hide the HR volume from the SAN servers
+   * Doesn't block access to the associated storage.
+   
+Fabric Zoning - Divides SAN fabric into seperate zones. Fabric that connects 
+   everything together. 
+   * Zoning: divide fabric into seperate zones.
+   * Soft Zoning: SAN fabric is config that the server, the SAN host can only see
+      the storage devices taht are associated with that zone.
+   * Hard Zoning: SAN switch itself config to restrict communication between
+      specific storage devices. Most secure.
+   * Port Zoning: Define zones by the ports and the hosts connected to them.
+   
+Virtual SANs (VSANs) - Used to divide up a storage area network into multiple 
+   logical SANs in much the same manner as you use VLANs on a standard ethernet
+   network.
+
+Device Connection Controls - Secures a SAN
+   * Prevention: 
+      - Port locking: bind a specific SAN ID number to a specific SAN switch.
+
+SAN Encryption - Encrypt data that being transmitted between SAN servers and 
+   SAN storage devices on a storage area network.
+   * Fibre Channel - Encapsulating Security Payload (ESP)
+   * iSCSI - Ethernet LAN encryption protocol IPsec to encrpyt data being 
+       transferred on the SAN fabric.   
+   
+   
+   
+   

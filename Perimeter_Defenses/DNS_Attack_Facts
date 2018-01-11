@@ -1,0 +1,9 @@
+DNS Attack Facts
+------------------------
+
+DNS Poisoning: (DNS Cache poisoning)
+ - when a name server recieves malicious or misleading data that incorrectly maps host names and IP addresses.
+
+Domain Name Kiting:
+ - When spammers exploit domain registration by taking advantage of the five day grace period for a newly registered domain name.
+

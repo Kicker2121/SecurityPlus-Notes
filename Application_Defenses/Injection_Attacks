@@ -1,0 +1,32 @@
+Injection Attacks
+-------------------------------------------
+
+LDAP Injection Attack - exploit web based application that constructs LDAP
+  statements based on user input.
+
+XML Injection Attack - Used to manipulate the XML structure thats used by an
+  XML based application or service. Also seeks to insert malicious XML content
+  into the XML structure used by that application.
+  <![cDATA[<img src=malicious URL>]]>
+  
+Command Injection Attack - Inject and execute commands by the attacker in the 
+  application thats vulnerable. Vulnerable application runs commands on behalf
+  of the attacker. RUNS with Privileges of the Application
+
+Directory Traversal Attack (Path) - Gain access to a file or file system on the 
+  server system where a particular network application is running that the end 
+  user should not have access to. Exploits some type of vulnerability in an 
+  application.
+  * Sample PHP code Snippet:
+     include ("/home/shared/" . $FILE1);
+     GET /Myfile.PHP HTTP/1.0
+     Cookie: FIle1= ../../../etc.shadow --> working our way through the directory
+     tree of the file system
+     $2e%2e%2f = . . /
+     
+
+
+
+
+
+

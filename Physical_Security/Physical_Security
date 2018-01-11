@@ -1,0 +1,37 @@
+Physical Security
+-----------------------------------
+
+Prevention - Make a network a less tempting target to break into.
+
+Detection - Determine when they broke in, what they saw, and when they did it.
+
+Recovery - Breaches, Review your physical security policy to determine what 
+   weaknesses allowed the attacker in. Fix any damaged that the breach caused. 
+
+Defense in Depth: Layered approach to security.
+   * Physical Barriers
+   * Logical Barriers
+   * Using both is a multi-barrier system
+   
+Perimeter Security - First physical barrier
+   * Fence: VAN ECK
+   * Guard: PHREAKING
+   * Video Surveillance
+   * Window Placement
+   
+Access Security - Second layer of defense
+   > Attackers
+   * Piggybacking: With consent
+   * Tailgating: Without consent
+   
+   > Problem Points:
+   1. Unmonitored Entry Points: No-one watching   
+   2. Monitored Entry Points:   Someone watching
+   
+Inner-Facility Access - 
+
+
+
+Computer Physical Security - 
+
+

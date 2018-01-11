@@ -1,0 +1,46 @@
+Network Monitoring Facts
+================================
+
+Logs - a record of events that have occurred on a system. Logging capabilities are
+       built into operating systems, services, and applications. Log entries are
+       generated in response to changes in configuration,system,state, or network
+       conditions.
+       
+Load Tester - simulates a load on a server or service.
+       Example: the load tester might simulate a large number of client
+       connections to a website, simulate test file downloads for an FTP site,
+       or simulate large volumes of email. Use a load tester to make sure a 
+       system has sufficient capacity for expected loads. A load tester can
+       even estimate failure points where the load is more than the system can
+       handle.
+       
+Throughput Tester - measures the amount of data that can be transferred through
+       a network or processed by a device (such as the amount of data that can
+       be retrieved from a disk in a specific period of time). On a network,
+       a throughput tester sends a specific amount of data through the network
+       and measures the time it takes to transfer the data. This creates a 
+       measurement of the actual bandwidth of the network. Use a throughput
+       tester to validate bandwidth on your network and identify when the 
+       bandwidth is significantly below what it should be. Also can help you
+       identify when a network is slow but will not give you sufficient 
+       information to identify why it is slow.
+       
+Packet Sniffer - Software that captures or records frames that are transmitted on 
+       the network.
+       > Uses:
+          - Identify types of traffic on a network
+          - Viewing of exchanging of packets between comm devices
+          - Analyze packets sent to and from devices
+          - View packet contents
+          
+Protocol Analyzer - special type of packet sniffer that captures transmitted 
+       frames. Also a passive device in that it copies frames and allows you to
+       view frame contents but does not allow you to modify and retransit frames.
+       > Uses:
+          - Check for specific protocols on the network - SMTP, POP3, DNS, ICMP
+          - Identify frames that might cause errors
+          - Examine the data contained within a packet
+          - Troubleshoot comm. problems or investigate source of heavy network
+            traffic
+       Also shows the traffic that exists on the network and the source and 
+       destination of that traffic.

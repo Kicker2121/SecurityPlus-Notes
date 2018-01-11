@@ -1,0 +1,43 @@
+Wireless Attack Facts
+--------------------------
+
+Rogue Access Point:
+ - Any unauthorized AP added to a network.
+ - Can allow the unauthorized capture of credentials and other sensitive information as
+   well as conduct phishing and man-in-the-middle attacks
+    * Attacker with access to the wired network installs a wireless AP on a free port
+         AP then provides a mehtod for remotely accessing the network
+    * Attacker near a valid wireless AP installs an AP with the same or similiar (SSID)
+         The AP is configured to prompt for credentials, allowing the attacker to steal
+         those credentials.
+    * Attacker configures a wireless AP in a public location and then monitors traffic
+         of those who connect to the AP in order to capture sensitive information
+    
+    ** Mitigate and Protection:
+
+    ** Put AP's in seperate virtual LANs
+       Use site survey tools to identify hosts and APs
+       Check connected MAC addresses
+       Conduct an RF noise analysis to detect a malicious rogue AP
+
+Wardriving:
+ - Attacker scans an area looking for a available wireless networks.
+ - Used with high-gain antenna or by driving around looking for unsecured wireless APs
+
+Warchalking:
+ - Draws symbols in public places to advertise existence and status of wireless networks
+
+Packet Sniffing:
+ - Eavesdropping, decoding of wireless transmissions
+
+Initialization Vector (IV) Attack:
+ - Is a seed value used in encryption.
+ - Seed value and key are used in encryption algorithm to generate additional keys or 
+     to encrypt data
+
+Interference:
+ - Signal that corrupts or destroys the wireless signal by APs and other wireless devices.
+
+Near Field Communication (NFC):
+ - 
+

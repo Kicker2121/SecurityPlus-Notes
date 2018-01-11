@@ -1,0 +1,121 @@
+Network Protocol Facts
+=================================
+
+- Transmission Control Protocol (TCP)
+  * Provides services that ensure accurate and timely deliver of network 
+      communications between two hosts. 
+  * TCP is an OSI layer 4 (Transport layer) protocol.
+  * TCP is connection-oriented which means that it provides a guaranteed delivery
+      of data between hosts through:
+        > Sequencing of data packets
+        > flow control
+        > error checking
+  * TCP Three-Way handshake is the process used to establish a TCP session. Also a 
+    feature of TCP, providing service consisting of a serial two-way data stream on top 
+    of the packet-oriented IP protocol.
+  * 3-Step Process: requires both the client and server to exchange SYN and ACK  
+    (acknowledgment) packets before actual data communication begins.
+  * Steps of the process:
+     #Example 1:
+      1. A host sends a SYN packet to target host
+      2. The target host responds to the original host with a SYN ACK packet
+      3. The host responds to the target host with an ACK packet
+     #Example 2:
+      - Host A sends a TCP SYNchronize packets to Host B
+      - Host B recieves A's SYN
+      - Host B sends a SYNchronize-ACKnowledgment
+      - Host A recieves B's SYN-ACK
+      - Host A sends ACKnowledge
+      - Host B recieves ACK
+      - TCP socket connection is: ESTABLISHED  
+ * What port does a packet play: -> port 5228
+
+ * Note: FPT, Telnet, HTTP, HTTPS, IMAP, SSH, and any other protocol that rides over 
+         TCP also has a 3-way handshake performed as connection is opened.
+         TCP 'rides' on top of Internet Protocol(IP) in the protocol stack.
+
+- User Diagram Protocol (UDP)
+  * A host-to-host protocol like TCP; Universal Datagram Protocol
+  * Is connectionless: that it does not include mechanisms for ensuring timely
+      and accurate delivery, but uses a best effort delivery.
+  * Has less overhead, but offers faster communications, but at an expense of
+      possible errors and data loss
+
+- Difference between TCP and UDP
+  * TCP/IP has a three-way handshake there for connection oriented communication
+  * UDP is more secure, fires and forget - most games work on this    
+
+- Internet Protocol (IP)
+  * Is an OSI layer 3 protocol that is connectionless and relies on upper layer
+      delivery and connection orientation.
+      
+- Network Packet Exchange (IPX)[NPE]
+  * An older protocol used with older Novell networks. 
+  
+- Network Basic Input / Output system (NetBIOS)
+  * Used to describe the combination of two protocols.
+      > NetBEUI
+      > NetBIOS - non-routable protocol
+      
+- Internet Control Message Protocol (ICMP)
+  * Commonly used for troubleshooting and information gathering.
+  * Works closely with IP in providing error and control information, and by 
+      allowing hosts exchange packet status information which helps move packets
+      through the internetwork.
+  * Two utilities for common management
+      > Ping 
+          - an ICMP Echo request
+          - used to determine whether devices are reachable and can communicate
+            accross the network
+      > Traceroute 
+          - Determines how many routers (hops) are between the source and the 
+            target
+          - Determinies timeout requests values for each
+            router
+      
+- Address Resolution Protocol (ARP)
+  * Providing IP address-to-MAC address name address resolution.
+  * A host that knows the IP address of a host can discover the corresponding
+      MAC address.
+      
+- Domain Name System (DNS)
+  * Distributed database that maps logical host names to IP addresses.
+  * Steps for process:
+     1. Host looks in its local cache to see if it recently resolved host name
+     2. Information not in cache, checks the host file.
+     3. If IP address not found, host contacts its preferred DNS server. If
+        this DNS server cannot be found, it continues contacting additonal 
+        DNS servers until one responds.
+     4. Host sends name information to the DNS server.
+     5. If names cannot be found in the zones, then it forwards the request
+        to a root zone name server.
+     6. 1st DNS server then request the info, from the top-level domain server,
+     7. DNS server places the info in its cache and returns the IP address to the
+        client host. Then places the info in its cache and uses the IP address to 
+        contact the desired destination device.
+        
+- Simple Network Management Protocol (SNMP)
+  * Designed for managing complex networks.
+  * Lets network hosts exchange configuration and status information.
+      > Manager: Computer used to perform management tasks.
+      > Agent: Software process that runs on managed network devices.
+      > Management Information Base: Host configuration information.
+      > Trap: Event configured on an agent.
+  * SNMP version 2: added security features
+      > Authentication for agents and managers.
+      > Encryption of SNMP information
+      > Message integrity to ensure that data is not altered in transit.
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

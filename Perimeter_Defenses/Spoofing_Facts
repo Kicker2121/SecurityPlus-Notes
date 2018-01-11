@@ -1,0 +1,27 @@
+Spoofing Facts
+--------------------------
+
+IP Spoofing:
+ - Changes the IP address information within a packet
+ - Used to: hide the origin of the attack by spoofing the source address
+ - Amplify attack by sending a message to a broadcast address, and redirecting responses to a victim who is overwhelmed with responses.
+
+MAC Spoofing:
+ - An attacking device spoofs the MAC address of a valid host currently in the MAC 
+   address table of the switch.
+ - Switch then forwards frame destined for that valid host to the attacking device.
+    * Used to bypass:
+       - AP w/ MAC filtering on wireless network
+       - Router access control list (ACLs)
+       - 802.1x port-based security
+
+Arp Spoofing
+ - Uses spoofed ARP messages to associate a different MAC address with an IP address.
+ - Can be used to perform a man-in-the-middle attack
+
+
+** Countermeasures to prevent spoofing are:
+    - Implement firewall and router filters to prevent spoofed packets from crossing into or out of a private secured network
+    - Use certificates to prove identity, reverse DNS lookup to verify source email address.
+    - encrypted communication protocols, such as IPSec.
+    - 

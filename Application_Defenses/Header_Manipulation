@@ -1,0 +1,44 @@
+Header Manipulation
+----------------------------------
+Topic: HTTP response header manipulation
+
+HTTP protocol
+   Ex: client system running web browser and a server system running a web server.
+      client send HTTP requests to the web server, the request uses the Get method
+      asking the web server to send a particular resource to the browser. Request
+      is transferred to the web serverm which then crafts an HTTP message.
+      
+HTTP Response Splitting - 
+   Ex: Web application in question must allow input that contains carriage return
+      characters, \r, and line feed characters, \n, into the header of the HTTP
+      response itself. These characters give the attacker control of the 
+      remaining headers and the body of the response that the application is going
+      to send back to the browser that requested the resource. Also gives attacker
+      the ability to create additional responses that are entirelly under their 
+      control.
+      * Adds CR (\r) + LF (\n) into the HEADER
+      * Ex: index.html\r\r HTTP/L1 200
+         OK\r\n Malicious Code
+
+Cache Poisoning - Attacker finds the vulnerability in the web application
+   in question that allows them to fill that HTTP header response field with 
+   multiple headers, and then forces the proxy cache server to flush its real
+   cache content. Then replaces it with the new poisoned cache content from the
+   attack.
+   Ex:
+   
+Cross-User Defacement - Carried out via response splitting. Attack essentially is 
+   temporary a form of defacement. 
+   * temporary defacement
+   * Two Strategies:
+      - Destroy Trust: Attacker tries to make a valid website look like 
+      its defaced. 
+      - Phishing / Pharming: Victimize the actual end user.
+         Sending them pages that look like the real web page they were trying to
+         access.
+         
+Manipulate Cookies on a User's Workstation - Injecting a custom HTTP header into 
+   the HTTP responses, which can be used to alter the cookies stored in the end 
+   users browser, and the attackers may manipulate these cookies to fradulently
+   authenticate themselves to a website, to plant cookies that shouldn't have
+   been there.

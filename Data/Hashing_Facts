@@ -1,0 +1,17 @@
+Hashing Facts
+=======================
+
+Predominate Hashing Algorithms used today
+> MD5
+> MD4, MD3, and so on.
+> SHA-1, ...
+> RIPEMD
+
+File Integrity - Hashes are often used to prove the integrity of downloaded files.
+   
+Secure Logon Credential Exchange - 
+   Examples: 
+      - LANMAN
+      - NTLM
+      - CHAP
+      - MS-CHAP

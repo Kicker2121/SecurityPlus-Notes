@@ -1,0 +1,27 @@
+Switch Attacks
+-----------------------------
+Switch - Looks at MAC addresses, not IP addresses
+ * MAC Address: First 3 spots are the manufacture.
+
+
+Mac Flooding - Flood switch with mac addresses, containing difference source
+   MAC addresses. 
+   * Turns switch into a hub
+   
+Arp Spoofing(ARP Poisoning) - Associate attackers MAC address with another 
+   computers IP address. 
+   * Default GATEWAY - Probably an upstream router
+   * Sniffer / Man-in-the-Middle
+   * A router in a switch network: sends data to specific computer
+       Example: CABLETRO - Is a switch
+   
+Mac Spoofing - Changing the sources MAC address on a packet header. 
+   * Used to bypass 802.1X port based security.
+   Ex: Switch has four ports and swtch may be set up with 802.1X authentication
+      port - based security. Switch says only certain mac address are allowed to
+      connect into a port.
+
+Dynamic Trunking Protocol (DTP) - Used by cisco systems. 
+   * Cisco protocol
+   * Disadvantage of DTP - Allows rogue network devices to configure ports,
+      that can change up configurations.

@@ -1,0 +1,61 @@
+IP Subnetting Facts
+=========================
+
+- Subnetting 
+  * is necessary because all network architectures have a limit on the 
+      number of hosts allowed on a single network segment. 
+  * Subnets(Physical network)
+  * Also used to efficiently use the available IP addresses. 
+  * Subnetting also uses custom rather than the default subnet masks.
+      ex: Instead of using 255.0.0.0 with a Class A address, you might use 
+      255.255.0.0 instead.
+  * Using custom subnet masks is often called classless addressing, because 
+      the subnet mask cannot be inferred simply from the class of a given IP
+      address. Address class is ignored and the mask is always supplied to 
+      identify the network and host portions of the address.
+  * Subnetting a network by using a custom mask, you can divide the IP addresses 
+      between several subnets. Also reducing the number of hosts available on
+      each network.  
+
+- Classful addresses
+  * are IP addresses that use the default subnet mask. They are classful because
+      the default subnet mask is used to identify the network and host portions
+      of the address. 
+  * are those that use a custom mask value to seperate network and host portions
+      of the IP address.
+      
+  * Using these addresses is made possible by a feature called: CIDR
+
+- Classles Inter-Domain (CIDR)
+  * Allows for non-default subnet masks (variable length subnet mask or VLSM
+  * Routers use the following information to identify networks.
+    > The beginning network address in range
+    > The number of bits used in the subnet mask
+      ex: subnet 199.70.0.0 with a mask of 255.255.0.0 is represented as
+        199.70.0.0/16 (with 16 being the number of 1 bits in the subnet mask
+
+- IP address Classes - subnet
+ ___________________________________________________________________________
+ = Class ===== 1st Octet Decimal Range ==== 1st Octet High Order Bits ======
+ * Class A -->      [1-126 *]                   0
+ * Class B -->      [128-191]                  10
+ * Class C -->      [192-223]                 110
+ * Class D -->      [224-239]                1110
+
+
+ - Class A: Network contains addresses for about 16 million network interfaces.
+
+ - Class B: Network contains addresses for about 65,000 network interfaces.
+
+ - Class C: its firts 3 bits set to 110
+              * Supports 254 hosts on each of 2 million networks.
+
+ - Class D: are 32-bit network addresses, all values within the range 
+            224.0.0.0 - 239.255.255.255 are used to uniquely identify multicast groups.
+              * No Host addressses within the Class D Address space, since all the hosts
+                within a group share the groups IP address for reciever purposes.
+              * Supports: Reserved for multicast groups
+
+
+
+

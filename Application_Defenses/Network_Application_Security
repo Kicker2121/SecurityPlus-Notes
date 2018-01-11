@@ -1,0 +1,25 @@
+Network Application Security
+--------------------------------
+
+Peer-to-Peer(P2P) Software - Network software uses connectivity between 
+   participants in the network, and the cumulative bandwidth of the network
+   participants in the network.
+   * Uses a Mesh Network
+   * Not a Hub-and-spoke network like a client server network.
+   
+Risk of Excessive Bandwidth Usage:
+   * Efficiently distribute files
+   * Risk: excessive bandwidth usage
+
+Risk of Data Leakage:
+   * Data leagage - data exchange is exchanged in clear text fashion by default. 
+        Mitigation: establish configurable baselines that don't allow it.
+
+Instant Messaging (IM) - A form of real-time communication between two users 
+   based on typed text. 
+   Ex: Windows Live Messenger, Yahoo IM, AOL IM and Skype
+
+Communications are Not Secure - Open and not protected, clear text, risk of 
+   malware.
+   
+Enforce the Company Security Policy:

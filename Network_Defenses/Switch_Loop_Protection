@@ -1,0 +1,50 @@
+Switch Loops Protection
+--------------------------------------------
+
+Switch Loops - Occur when two switches on your network are connected together with
+   a cable in the wrong way and configured in this manner they end up sending 
+   traffic back and forth to each other forever forming a loop.
+   
+Spanning Tree Protocol - Defined in the IEEE 802.1d specification.
+   A link management protocol that provides two different things.
+      1. Provides a path redundancy in case a swith goes down, but it also is
+         able to block ports in order to prevent switching loops.
+      * Important to Remember: 
+         - Switched Ehternet Network
+             Ex: Only 1 active path between two seperate hosts on same LAN 
+                segement, due to having multiple active paths between two hosts
+                on same LAN segment causes these loops in the network that cause
+                traffic storms within the loop, duplicating messages, and they
+                can grow in size. 
+      2. 
+      
+How Spanning Tree Protocol Works
+   1. Blocks switch loops wherein multiple switches are all connected together
+      into a type of ring.
+   2. 
+   * Tree of switches
+   * Allows Blocked Redundant Paths
+   * Transparent
+   * Root Switch: Root of the treee, center of spanning tree topology.
+
+Port Types:
+   * Root Ports: Configured to communicate directly back with the root switch.
+   * Designated Ports: Do what switch ports do, forwarding frames.
+   * Blocked Ports: form a loop, they provide redundancy.
+   
+Ports can exist in different states - Every switch using the Spanning Tree
+   Protocol can exist in one of five different states.
+   1. Blocking: Root switch knows active port & link to another network, blocks
+   2. Listening: Connected and active, listening to any traffic near
+   3. Learning: Port is active
+   4. Forwarding: Recieves frames, decides on path, then transmits
+   5. Disabled: Turns off
+
+Sequence of States for Ports - Dont want a starting loop enabled so all ports will
+   then progress from the blocking state to one of 2 different states. By doing
+   this the spanning tree protocol forms this tree of switches.
+   * Blocking State: Dont want a starting loop enabled
+      - Listening State: Preparation to starting forward frames
+         * Learning State: Listening and learning based on their mac addresses 
+            - Forwarding State: Sends data and forwarding traffic along
+      - Disabled State: Turn that link off to prevent switching loop.   

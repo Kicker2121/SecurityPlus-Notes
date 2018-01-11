@@ -1,0 +1,7 @@
+XMAS Tree Attacks
+=============================
+ - Requires a lot more processing between 2 hosts
+ - Router has to do a lot more work with a XMAS packet than a reqular packet.
+ 
+ > Recon on target system -> FIN, URG, PSH
+ > DoS

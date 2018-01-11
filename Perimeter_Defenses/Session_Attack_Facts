@@ -1,0 +1,39 @@
+Session Based Attack Facts
+-----------------------------
+
+Man-in-the-middle: 
+ - Attacker inserts himself in the communication flow between the client and the server.
+ - The client is fooled into authenticating to the attacker.
+
+TCP/IP (session) hijacking:
+ - Extension of a man-in-the-middle attack where there attacker steals an open and 
+   active communication session from a legitimate user.
+ - Attack takes over the session and cuts off the original source device.
+ - State is manipulated so that the attacker is able to insert alternate packets into 
+   the communication stream.
+    * Countermeasures for hijacking:
+        - IPSec or other encryption protocols
+        - Certificate authentication
+        - Mutual Authentication
+        - Randomizing sequencing mechanisms
+        - Packet time stamps & packet sequencing
+
+Session Fixation
+ - An Attack that permits an attacker to hijack a valid user session; 
+   Attack explores a limitation of web application manages the session ID.
+
+HTTP (session) hijacking:
+ - A real-time attack in which the attacker hijacks a users cookies and uses the
+   cookies to take over the HTTP session.
+
+Replay Attack:
+ - Attacker uses a protocal analyzer or sniffer to capture authentication information 
+   going from the client to the server.
+ - Attacker uses this information to connect at a later time and pretend to be the  
+   client.
+
+Null Session:
+ - Connection that is made using a blank username and password
+    * Prevention:
+        - Block ports 139 and 445 on network firewalls
+

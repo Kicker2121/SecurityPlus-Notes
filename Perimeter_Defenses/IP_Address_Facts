@@ -1,0 +1,43 @@
+IP Address Facts
+================================
+
+- Prefix
+  * First 64 bits is known as the prefix
+  * Parts of prefix are: ISP, Network, Subnet
+  * Prefix length identifies number of bits in relebant portion of the prefix.
+  * Indication: add a slash(/) following the length number. Full quartets with
+       trailing 0's in the prefix address can be omitted
+       ex: 2001:0DB8:4898:DAFC::/64
+       
+  * Prefix also identifies location of host: often refered to as global routing 
+       prefix.
+       
+- Interface ID
+  * Last 64 bits is the interface ID
+  * Interface ID is not a host address
+  * Interface ID's must be unique within a subnet, but the same if interface is on
+       a different subnet. 
+  * Ethernet Networks: interface id can be automatically derived from the MAC
+       address. Using automatice host ID simplifies administration.
+       
+- IP address Classes
+ ___________________________________________________________________________
+ = Class ===== 1st Octet Decimal Range ==== 1st Octet High Order Bits ======
+ * Class A -->      [1-126 *]                   0
+ * Class B -->      [128-191]                  10
+ * Class C -->      [192-223]                 110
+ * Class D -->      [224-239]                1110
+
+
+ - Class A: Network contains addresses for about 16 million network interfaces.
+
+ - Class B: Network contains addresses for about 65,000 network interfaces.
+
+ - Class C: its firts 3 bits set to 110
+              * Supports 254 hosts on each of 2 million networks.
+
+ - Class D: are 32-bit network addresses, all values within the range 
+            224.0.0.0 - 239.255.255.255 are used to uniquely identify multicast groups.
+              * No Host addressses within the Class D Address space, since all the hosts
+                within a group share the groups IP address for reciever purposes.
+              * Supports: Reserved for multicast groups

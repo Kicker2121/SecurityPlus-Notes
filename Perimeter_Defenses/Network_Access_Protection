@@ -1,0 +1,52 @@
+Network Access Protection
+--------------------------------
+
+NAP: 
+ - Protect integrity of our internal network by ensuring that nay computer that tries to connect to that network meets certain health policy requirements.
+ - If health policy or does not meet, then connection is placed on a restricted network
+ - Provide ongoing compliance
+
+NAP Client:
+ - Client computers must have NAP - aware software, either through the operating system or other components
+
+NAP Server:
+ - Responsible for keeping track of health - requrements and verifying that clients meet those requrements before gaining access.
+
+NAP Process:
+ - Client Requestung Access to internal network
+     * Present a current statement of health to a NAP enforcement point.
+     * It relays the health status that was supplied by the client system to a backend NAP server that is running NPS software
+
+NAP Implementations:
+ - DHCP Enforcement: client first request an IP address from the DHCP server on the network
+    * Use static IP address to get around it / bypass
+    * Simplest way and less secure
+ - Remote Desktop Client:
+    * Gateway server can be combined with NAP to allow or deny access based on health compliance.
+    * Uses ports 80 and 443
+ - Virtual Private Network (VPN):
+    * Client connects to the VPN server externall over the internet, VPN server then fathers the client health statement from the client system that trying to establish the connectio nand forwards that helath statement to your NAP Enforcement Point
+ - 802.1x
+    * Internal policy logic implemented to help control access to servers
+    * enforcement point for both wireless and wired clients
+ - IPSec with a Health Registration Authority: HRA
+    * Most Complicated and Complex and Secure
+    * Only one that uses HRA
+    * Used to helped implement domain and server isolation
+
+Boundary Network (untrusted network)
+ Comp 1 - non - compliant NAP client
+ Comp 2 - Cant even use NAP
+ Comp 3 - Client that hasnt yet been trusted to the network
+   * Any client here, is only allowed communication with other computers within this network
+   * Cannot communicate with internal network
+
+Implemintation of Remediation Servers within Restricted Network
+ - when client submits its statement of health to the NAP Enforcement Point, it is found to not be in compliiance with a health policy, the client system can still communicate with it
+
+Secure Network:
+ - Require IPSec Policy
+
+DHCP Enforcement Server:
+ - Controls access by leasing addresses only to computers that meet the health requrements.
+ - Enables NAP on the DHCP scope

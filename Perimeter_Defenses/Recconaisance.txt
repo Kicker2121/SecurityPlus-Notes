@@ -1,0 +1,17 @@
+Reconnaissance - Process of gathering information about 
+                 an organization in the pre-attack phase.
+
+[-] Technical Reconaissance - known as footprinting[gathering information] 
+      - Horizontal Scan (scan entire network)
+          *PING sweep
+      - Vertical Scan (scan individual machines)
+          *Port scan
+    ** Technical Recconaissance tools: 
+         - registrar queries & DNS queries: to get computer names and IP addresses,
+         - network enumeration: to find all the devices on a network
+         - network queries, ARP scans, PING sweeps, port scanning.
+         - Operating system identification: craft packets to send to different operating
+           systems, they all respond differently.
+    ** Footprinting tools:
+         - SamSpade, NSLookup,
+         - DNS queries: Traceroute, PING, NMap, and NeoTrace

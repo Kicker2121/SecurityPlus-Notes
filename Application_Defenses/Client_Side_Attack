@@ -1,0 +1,17 @@
+Client Side Attacks
+-----------------------------------
+
+Server Side Attacks - The server is the target of the attack and the attack 
+   originates from a client system.
+   
+Client Side Attacks - A targets vulnerabilities in the client are attacked
+   by a malicious server process or by malicious data coming from the server.
+   Ex: Web, email, IM, FTP, Streaming Media
+
+Stateful Firewall - Is concerned with whether or nots its a legitimate TCP 
+   connection.
+
+Packet Filtering Firewall - Where is the packets coming from, where are they
+   going to and what ports did it come from and what ports are they going to.
+   
+   

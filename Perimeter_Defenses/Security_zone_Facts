@@ -1,0 +1,17 @@
+Security Zone Facts
+-------------------------
+
+Intranet:
+ - Private network(LAN) that employs internet information services for internal use only.
+
+Extranet:
+ - Privately-controlled network, distinct form, but located between the internet and a private LAN.
+ - Often used to grant resource access to business partners, suppliers, and even customers outside the organization.
+
+Demilitarized Zone:
+  * DMZ
+    - Network that contains publicly accessible resources.
+    - DMZ is located between the private network and an untrusted network
+  * Bastion Host
+    - A server that is exposed to attacks by untrusted networks
+    - Can be placed inside the DMZ or exposed on the public network

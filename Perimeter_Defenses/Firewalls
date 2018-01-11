@@ -1,0 +1,27 @@
+Firewalls
+-------------------
+
+Types of Firewalls:
+ - Packet Filtering
+     * Layer 3
+     * IPs, Ports, Protocols
+     * ACL
+     * Header Only
+     * Takes less time
+
+ - Stateful Inspection: (circuit Level)
+     * Makes decisions about which traffic to allow based on virtual circuits or sessions.
+     * Header
+     * Determines whether the communication makes sense
+     * Keeps tracks of sessions, (state table)
+     * Takes more time
+
+ - Application Layer: (proxy firewall)
+     * Makes security decisions based on information contained within the data portion of a packets.
+     * Operates to layer 7
+     * every packets is stopped at the firewall
+     * IP forwarding, packets are stopped, looked at then sent on there way
+     * Inspection of encrypted packets, SSL inspection
+
+
+** Troubleshooting: Examine pc firewall 

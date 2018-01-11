@@ -1,0 +1,14 @@
+SPIM
+---------------------------
+
+Spim - Variation of spam, aimed at users of instant messaging services. 
+
+Why Spim is Prevalent?
+   * Most IM Systems Provide DIRECTORIES
+   * Spim can be sent
+      - Benign Spim: ADs
+      - Malicious Spim: Malware, can perpetuate a bot
+
+Protection Against Spim - These will reduce spim fairly dramatically 
+   * Use a Whitelist: List of users from which they choose to allow
+   * Use an IM Blocker: 
